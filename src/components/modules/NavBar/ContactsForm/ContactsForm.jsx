@@ -1,4 +1,4 @@
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, useColorMode } from "@chakra-ui/react";
 import useForm from "../../../shared/hooks/useForm";
 import initialState from "./initialState";
 import { Center, FormControl, FormLabel, Input } from "@chakra-ui/react";
@@ -6,6 +6,7 @@ import{MdPersonAdd} from 'react-icons/md';
 
 
 const ContactsForm = ({ onSubmit }) => {
+  const {colorMode} = useColorMode();
   const { state, handleChange, handleSubmit } = useForm({
     initialState,
     onSubmit,
@@ -15,7 +16,7 @@ const ContactsForm = ({ onSubmit }) => {
   return (
     <Box maxW="440px" borderColor="teal" borderWidth="2px"  borderRadius="lg" p="6">
       <FormControl as="form" onSubmit={handleSubmit} isRequired>
-        <FormLabel>Name</FormLabel>
+        <FormLabel color={colorMode === 'dark' ? 'white' : 'black'}>Name</FormLabel>
         <Input
           value={name}
           onChange={handleChange}
@@ -24,7 +25,7 @@ const ContactsForm = ({ onSubmit }) => {
           mb="2"
           placeholder=" Name"
         />
-        <FormLabel>Number</FormLabel>
+        <FormLabel color={colorMode === 'dark' ? 'white' : 'black'}>Number</FormLabel>
         <Input
           value={number}
           onChange={handleChange}

@@ -1,6 +1,6 @@
 import { useEffect} from "react";
 import ContactsForm from "components/modules/NavBar/ContactsForm/ContactsForm";
-import {SimpleGrid , Center, Box, Heading} from "@chakra-ui/react";
+import {SimpleGrid , Center, Box, Heading, useColorMode} from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
 import { getFilter, getFilterContacts } from "redux/contacts/contacts-selectors";
 import { fetchContacts, addContact, removeContact } from "redux/contacts/contacts-operations";
@@ -11,6 +11,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const ContactsPage = () => {
+  const {colorMode} = useColorMode();
 const contacts = useSelector(getFilterContacts);
 const value = useSelector(getFilter);
 const dispatch = useDispatch();
@@ -31,7 +32,7 @@ const onAddContact =(payload) => {
     return (
         <Box>
             <Center>
-            <Heading  m={8} padding="2" as='h2' size='md'>
+            <Heading  m={8} padding="2" as='h2' size='md' color={colorMode === 'dark' ? 'white' : 'black'}>
         Contacts 
        </Heading>
             </Center>

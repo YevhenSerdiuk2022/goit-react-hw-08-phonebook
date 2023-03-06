@@ -1,4 +1,4 @@
-import { Box, Stack, Heading } from "@chakra-ui/react";
+import { Box, Stack, Heading, useColorMode } from "@chakra-ui/react";
 import SignupForm from "components/modules/NavBar/SignupForm/SignupForm";
 import { useDispatch, useSelector } from "react-redux";
 import { signup } from "../../redux/auth/auth-operations";
@@ -12,6 +12,7 @@ import {
 
 
 const SignupPage = () => {
+  const {colorMode} = useColorMode();
   const dispatch = useDispatch();
   const { status, message } = useSelector(getAuthError);
 
@@ -24,7 +25,7 @@ const SignupPage = () => {
   return (
     <Box p="6">
       <Stack spacing={6}>
-        <Heading as="h2" size="md">
+        <Heading as="h2" size="md" color={colorMode === 'dark' ? 'white' : 'black'}>
           Sign up{" "}
         </Heading>
 

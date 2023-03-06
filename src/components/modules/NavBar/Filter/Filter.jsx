@@ -1,6 +1,7 @@
-import { Box, FormControl, FormLabel, Input } from "@chakra-ui/react";
+import { Box, FormControl, FormLabel, Input, useColorMode } from "@chakra-ui/react";
 
 const Filter = ({ onFilter, value }) => {
+  const {colorMode} = useColorMode();
   return (
     <Box
       maxW="440px"
@@ -10,7 +11,7 @@ const Filter = ({ onFilter, value }) => {
       p="6"
     >
       <FormControl as="form" isRequired>
-        <FormLabel> Find contacts by name</FormLabel>
+        <FormLabel color={colorMode === 'dark' ? 'white' : 'black'}> Find contacts by name</FormLabel>
         <Input
           value={value}
           onChange={onFilter}

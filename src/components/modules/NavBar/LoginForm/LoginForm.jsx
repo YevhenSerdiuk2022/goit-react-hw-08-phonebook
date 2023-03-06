@@ -1,9 +1,10 @@
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, useColorMode } from "@chakra-ui/react";
 import useForm from "../../../shared/hooks/useForm";
 import initialState from "./initialState";
 import {  FormControl, FormLabel, Input } from "@chakra-ui/react";
 
 const LoginForm = ({ onSubmit }) => {
+  const {colorMode} = useColorMode();
   const { state, handleChange, handleSubmit } = useForm({
     initialState,
     onSubmit,
@@ -13,7 +14,7 @@ const LoginForm = ({ onSubmit }) => {
   return (
     <Box maxW="440px" borderColor="teal" borderWidth="2px"  borderRadius="lg" p="6">
       <FormControl as="form" onSubmit={handleSubmit} isRequired>
-        <FormLabel>Email</FormLabel>
+        <FormLabel color={colorMode === 'dark' ? 'white' : 'black'}>Email</FormLabel>
         <Input
           value={email}
           onChange={handleChange}
@@ -22,7 +23,7 @@ const LoginForm = ({ onSubmit }) => {
           mb="2"
           placeholder="Email"
         />
-        <FormLabel>Password</FormLabel>
+        <FormLabel color={colorMode === 'dark' ? 'white' : 'black'}>Password</FormLabel>
         <Input
           value={password}
           onChange={handleChange}

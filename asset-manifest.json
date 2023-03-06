@@ -1,13 +1,24 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-08-phonebook/static/css/main.7acaea2f.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.07d3183d.js",
+    "main.css": "/goit-react-hw-08-phonebook/static/css/main.c3d5249d.css",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.232a4424.js",
+    "static/js/677.25259179.chunk.js": "/goit-react-hw-08-phonebook/static/js/677.25259179.chunk.js",
+    "static/js/624.d3c63209.chunk.js": "/goit-react-hw-08-phonebook/static/js/624.d3c63209.chunk.js",
+    "static/js/829.2e20ad50.chunk.js": "/goit-react-hw-08-phonebook/static/js/829.2e20ad50.chunk.js",
+    "static/js/953.826b459a.chunk.js": "/goit-react-hw-08-phonebook/static/js/953.826b459a.chunk.js",
+    "static/css/544.d4139ab1.chunk.css": "/goit-react-hw-08-phonebook/static/css/544.d4139ab1.chunk.css",
+    "static/media/desk.jpeg": "/goit-react-hw-08-phonebook/static/media/desk.9682c457e1a239514ad9.jpeg",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
-    "main.7acaea2f.css.map": "/goit-react-hw-08-phonebook/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/goit-react-hw-08-phonebook/static/js/main.07d3183d.js.map"
+    "main.c3d5249d.css.map": "/goit-react-hw-08-phonebook/static/css/main.c3d5249d.css.map",
+    "main.232a4424.js.map": "/goit-react-hw-08-phonebook/static/js/main.232a4424.js.map",
+    "677.25259179.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/677.25259179.chunk.js.map",
+    "624.d3c63209.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/624.d3c63209.chunk.js.map",
+    "829.2e20ad50.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/829.2e20ad50.chunk.js.map",
+    "953.826b459a.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/953.826b459a.chunk.js.map",
+    "544.d4139ab1.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/544.d4139ab1.chunk.css.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.c3d5249d.css",
+    "static/js/main.232a4424.js"
   ]
 }
